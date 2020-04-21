@@ -89,7 +89,7 @@ public class ParseUnlimitedInputJob {
     }
 
     private boolean anHourHasPassed(Stopwatch stopwatch) {
-        return stopwatch.elapsedTime() >= 5;
+        return stopwatch.elapsedTime() >= 3600;
     }
 
     private void reset(Set<Host> connected, Set<Host> received, Map<Host, Integer> count, Stopwatch stopwatch) {
